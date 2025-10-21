@@ -1,3 +1,5 @@
+"use client";
+
 import ProductsPageClient from "./ProductsPageClient";
 
 export default function ProductsPage() {
