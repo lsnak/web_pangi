@@ -1,30 +1,32 @@
-"use client";
+// "use client";
 
-import { useEffect, useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { useSearchParams, useRouter } from "next/navigation";
-import Image from "next/image";
-import { PurchaseModal } from "@/components/purchase-modal";
-import ProductsPageClient from "./ProductsPageClient";
+// import { useEffect, useState } from "react";
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Button } from "@/components/ui/button";
+// import { useSearchParams, useRouter } from "next/navigation";
+// import Image from "next/image";
+// import { PurchaseModal } from "@/components/purchase-modal";
+// import ProductsPageClient from "./ProductsPageClient";
 
-interface Plan {
-  day: string;
-  price: number;
-  stock: string[];
-}
+// interface Plan {
+//   day: string;
+//   price: number;
+//   stock: string[];
+// }
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  category: string;
-  plan: Plan[];
-  specification: string;
-  image_url?: string;
-  status: string;
-}
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   description: string;
+//   category: string;
+//   plan: Plan[];
+//   specification: string;
+//   image_url?: string;
+//   status: string;
+// }
+
+// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
 // export default function ProductsPage() {
 //   const [products, setProducts] = useState<Product[]>([]);
@@ -283,6 +285,9 @@ interface Product {
 //   );
 // }
 
+import ProductsPageClient from "./ProductsPageClient";
+
 export default function ProductsPage() {
   return <ProductsPageClient />;
 }
+
