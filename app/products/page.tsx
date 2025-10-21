@@ -1,11 +1,10 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import { PurchaseModal } from "@/components/purchase-modal";
+import ProductsPageClient from "./ProductsPageClient";
 
 interface Plan {
   day: string;
