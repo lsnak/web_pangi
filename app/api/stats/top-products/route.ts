@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { allAsync } from '@/lib/db';
 
 export async function GET(request: Request) {
+  const url = request.url;
   try {
     const { searchParams } = new URL(request.url);
     const limit = searchParams.get('limit') || '5';
